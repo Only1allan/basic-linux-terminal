@@ -24,31 +24,28 @@ The following standard C libraries are included in `shell.h` to support various 
 2. **`#include <stdlib.h>`**  
  - Provides memory management (`malloc`, `free`), program control (`exit`), and other utility functions like `_strdup`.
 
-3. **`#include <string.h>`**  
- - Used for string manipulation, such as tokenizing strings (`strtok`) and copying/concatenating strings (`strcpy`, `strcat`).
-
-4. **`#include <unistd.h>`**  
+3. **`#include <unistd.h>`**  
  - Provides access to the POSIX operating system API, including functions for process management (`fork`, `execve`), directory navigation (`chdir`), and file descriptors.
 
 ### **System-Specific Libraries**
-5. **`#include <sys/wait.h>`**  
+4. **`#include <sys/wait.h>`**  
  - Allows the parent process to wait for the child process to finish execution using `wait`.
 
-6. **`#include <fcntl.h>`**  
+5. **`#include <fcntl.h>`**  
  - Used for file control, including manipulating file descriptors (though not explicitly in the current implementation).
 
-7. **`#include <signal.h>`**  
+6. **`#include <signal.h>`**  
  - Used to handle signals (e.g., ignoring `SIGINT` in this shell).
 
-8. **`#include <sys/types.h>` and `#include <sys/stat.h>`**  
+7. **`#include <sys/types.h>` and `#include <sys/stat.h>`**  
  - Support file attributes and types, useful for file and process-related operations.
 
 ### **Additional Libraries**
-9. **`#include <ctype.h>`**  
+8. **`#include <ctype.h>`**  
  - Provides functions for character checks and transformations (e.g., `isdigit` for parsing numeric arguments in `_atoi`).
 
 ### **External Variables**
-10. **`extern char **environ;`**  
+9. **`extern char **environ;`**  
  - Gives access to the environment variables of the current process, used when executing commands with `execve`.
 
 ---
