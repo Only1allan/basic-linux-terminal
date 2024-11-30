@@ -2,6 +2,8 @@
 
 This project implements a simple Unix shell in C, allowing users to execute commands, manage processes, and use built-in functions such as `cd` and `exit`. It mimics the behavior of standard shells like `bash` or `sh` but with basic functionality.
 
+## **Video URL**
+https://youtu.be/_pl7-w3M1wA?si=nRNEhkP6w2J53q6C
 ---
 
 ## **Features**
